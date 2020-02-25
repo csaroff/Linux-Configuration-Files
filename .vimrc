@@ -53,6 +53,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'kiteco/plugins'
 
 
 call vundle#end()            
@@ -369,7 +370,7 @@ map <leader>q :e ~/buffer<cr>
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
-helptags ~/.vim/doc
+" helptags ~/.vim/doc
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
