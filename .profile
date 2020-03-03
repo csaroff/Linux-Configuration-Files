@@ -16,13 +16,8 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-export TOMCAT_HOME="$HOME/Software/apache-tomcat-8.0.18"
-export ECLIPSE_HOME="$HOME/Software/eclipse"
-export GRAILS_HOME="$HOME/Software/grails-3.0.1"
-#export GRAILS_HOME="$HOME/Software/ggts-bundle/grails-2.4.4"
-export PATH="$HOME/Software/gfms/bin:$HOME/Software/glassfish4/bin:$HOME/Software/apache-tomcat-8.0.18/bin:$HOME/Software/activator-1.3.2-minimal:$HOME/Software/eclipse:$GRAILS_HOME/bin:$HOME/Software/ggts-bundle/ggts-3.6.4.RELEASE:$PATH"
-export CLASSPATH="$TOMCAT_HOME/lib:/usr/share/java/mysql-connector-java-5.0.8-bin.jar:$CLASSPATH"
 export DEPLOYMENT="dev"
+PATH=$HOME/Library/mongodb-macos-x86_64-enterprise-4.2.3/bin:$PATH
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
