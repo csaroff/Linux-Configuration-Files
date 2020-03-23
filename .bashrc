@@ -69,7 +69,8 @@ xterm*|rxvt*)
     ;;
 esac
 
-# enable color support of ls and also add handy aliases
+# Enable color support of ls and also add handy aliases
+# If we're on linux:
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
@@ -80,6 +81,21 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
+
+#################### If we're on OSX
+export CLICOLOR=1
+
+# Default
+# export LSCOLORS=ExFxCxDxBxegedabagacad
+
+
+# Black background
+# export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+# Mimic the colors of a typical Linux terminal
+export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+#################### https://apple.stackexchange.com/a/33679
+
 
 # some more ls aliases
 alias ll='ls -alF'

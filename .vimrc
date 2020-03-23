@@ -135,7 +135,7 @@ set t_vb=
 set tm=500
 
 "Make the mouse work inside vim
-set mouse=a
+set mouse=r
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
