@@ -54,6 +54,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'kiteco/plugins'
+Plugin 'chrisbra/Recover.vim'
 
 
 call vundle#end()            
