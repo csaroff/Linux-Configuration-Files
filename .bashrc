@@ -123,4 +123,4 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
-export PS1='\[\033[36m\]$(echo -e "\xCF\x83\x00") \u:\w\$\[\033[0m\]'
+export PS1="\[$(tput sgr0)\]\[\033[38;5;123m\]\u\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;123m\] ➤  \[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;7m\]\W\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;7m\] ➤  \[$(tput sgr0)\] \[$(tput sgr0)\]"
